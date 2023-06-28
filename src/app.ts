@@ -3,7 +3,7 @@ import cors from 'cors'
 import 'dotenv/config'
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT
 
 app.use(express.json());
 app.use(cors());
@@ -18,6 +18,6 @@ app.use('/status', (req, res) => {
   })
 })
 
-app.listen(port, () => {
+app.listen(3000, () => {
   console.log(`Server running on port ${port}`);
 });
